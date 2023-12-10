@@ -1,6 +1,8 @@
 Docker Mautic Image
 ===================
 
+![Mautic](readme_image.png "Mautic Open Source Marketing Automation")
+
 # How to use this image
 
 You can access and customize Docker Mautic from [Official Docker Hub image](https://hub.docker.com/r/mautic/mautic/).
