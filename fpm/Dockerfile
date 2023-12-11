@@ -14,6 +14,7 @@
 # The Mautic releases live here:  https://github.com/mautic/mautic/releases
 
 ARG PHP_VERSION="${PHP_VERSION:-7.1.33}"
+ARG PHP_SHA256="${PHP_SHA256:-bd7c0a9bd5433289ee01fd440af3715309faf583f75832b64fe169c100d52968}"
 FROM "php:${PHP_VERSION}-fpm"
 
 LABEL vendor="redgnus"
