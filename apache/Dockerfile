@@ -1,6 +1,6 @@
 FROM php:7.1-apache
 
-LABEL vendor="Mautic"
+LABEL vendor="redgnus"
 LABEL maintainer="Pablo Hörtner <redtux@pm.me> (@redtux)"
 LABEL org.opencontainers.image.source="https://github.com/redtux/mautic"
 
