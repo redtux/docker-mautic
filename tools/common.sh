@@ -34,7 +34,11 @@ build_title() {
   echo
 }
 publish_title() {
-  title "==== 🔨 Publishing Mautic Image · $1 💫 ===="
+  title "==== 📻 Publishing Mautic Image · $1 💫 ===="
+  title "Uploading to container registry"
+}
+registry_title() {
+  title "==== 🌐 $1 Registry · Login 💫 ===="
   echo
 }
 
