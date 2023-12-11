@@ -1,0 +1,7 @@
+---
+version: '3.9'
+services:
+  mautic:
+    build:
+      context: .
+      dockerfile: Dockerfile
