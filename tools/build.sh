@@ -35,7 +35,7 @@ source "${ENV_FILE}"
 clear
 log_title "==== 🎬 Starting update script 🚀 ===="
 echo
-./update.sh
+tools/update.sh
 # Log end of update script
 log_title "==== 🌠 Updating sources finished 🎉 ===="
 
