@@ -1,3 +1,18 @@
+# syntax=docker/dockerfile:1.2
+#
+# SPDX-FileCopyrightText: 2015-2016 Michael Babker <michael.babker@mautic.org>
+# SPDX-FileCopyrightText: 2017-2018 Petr Gregor <gregy@gregy.cz>
+# SPDX-FileCopyrightText: 2017-2020 Luiz Eduardo de Oliveira Fonseca <luizeof@gmail.com>
+# SPDX-FileCopyrightText: 2018 Alan Pazetto <alancpazetto@gmail.com>
+# SPDX-FileCopyrightText: 2018 Joachim C. <contact@ston3o.me> (@johackim)
+# SPDX-FileCopyrightText: 2019 Mathieu Brunot <mathieu.brunot@monogramm.io>
+# SPDX-FileCopyrightText: 2019 Regev Brody <regevbr@gmail.com>
+# SPDX-FileCopyrightText: 2023 Pablo Hörtner <redtux@pm.me>
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+# You can find the GPL 3.0 here:  https://www.gnu.org/licenses/gpl-3.0
+# The Mautic releases live here:  https://github.com/mautic/mautic/releases
+
 FROM php:7.1-apache
 
 LABEL vendor="redgnus"
