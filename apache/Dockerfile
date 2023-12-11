@@ -13,7 +13,8 @@
 # You can find the GPL 3.0 here:  https://www.gnu.org/licenses/gpl-3.0
 # The Mautic releases live here:  https://github.com/mautic/mautic/releases
 
-FROM php:7.1-apache
+ARG PHP_VERSION="${PHP_VERSION:-7.1.33}"
+FROM "php:${PHP_VERSION}-apache"
 
 LABEL vendor="redgnus"
 LABEL maintainer="Pablo Hörtner <redtux@pm.me> (@redtux)"
