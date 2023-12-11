@@ -3,3 +3,6 @@
 !fpm/Dockerfile
 apache/*
 fpm/*
+
+# Exclude dotenv files containing secrets
+.env*
