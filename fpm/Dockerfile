@@ -13,8 +13,8 @@
 # You can find the GPL 3.0 here:  https://www.gnu.org/licenses/gpl-3.0
 # The Mautic releases live here:  https://github.com/mautic/mautic/releases
 
-ARG PHP_VERSION="${PHP_VERSION:-7.1.33}"
-ARG PHP_SHA256="${PHP_SHA256:-bd7c0a9bd5433289ee01fd440af3715309faf583f75832b64fe169c100d52968}"
+ARG PHP_VERSION="${PHP_VERSION:-7.4.33}"
+ARG PHP_SHA256="${PHP_SHA256:-924846abf93bc613815c55dd3f5809377813ac62a9ec4eb3778675b82a27b927}"
 FROM "php:${PHP_VERSION}-fpm"
 
 LABEL vendor="redgnus"
