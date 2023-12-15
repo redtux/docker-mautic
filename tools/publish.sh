@@ -22,14 +22,7 @@ WORKDIR="$(dirname "$(realpath "${BASH_SOURCE[0]}")")/.."
 cd "$WORKDIR"
 
 # Set environment variables
-ENV_FILE="${PWD}/.env"
-if [[ ! -f "${ENV_FILE}" ]]; then
-  cp -a example.env "${ENV_FILE}"
-fi
-
-# Source environment variables
-# shellcheck source=/dev/null
-source "${ENV_FILE}"
+set_env_vars
 
 if [ -z "${MAUTIC_VERSION:-}" ]; then
   latest_api_url="https://api.github.com/repos/mautic/mautic/releases/latest"

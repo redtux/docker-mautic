@@ -14,6 +14,16 @@
 IFS=$'\n\t'
 set -euo pipefail
 
+# Set environment variables
+set_env_vars() {
+  ENV_FILE="${PWD}/.env"
+  if [[ ! -f "${ENV_FILE}" ]]; then
+    eval "echo \"$(envsubst < example.env)\"" > "${ENV_FILE}"
+  fi
+  # shellcheck source=/dev/null
+  source "${ENV_FILE}"
+}
+
 # Set log title color
 log_title() {
   local color='\033[1;35m'  # Purple
